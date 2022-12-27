@@ -1,8 +1,15 @@
 # list-article
 
 
-## SPRING | REST-API | SPRING-SECURITY
-This contains 3 api's
+## SPRING | REST-API | SPRING-SECURITY | POSTGRESQL
+
+
+### - Postgress database table 'article'
+
+<img width="553" alt="Screenshot 2022-12-28 at 01 11 35" src="https://user-images.githubusercontent.com/19555470/209735466-30e18eb4-392d-41af-8063-7fdb29bc92c9.png">
+
+
+This application contains 3 api's
 
 Use the following credentials to log in ( 2 roles | Change the user role 'ADMIN' to access '/statistic' end point) [application.properties]
 
@@ -42,3 +49,11 @@ If the validation is succedded with spring security it'll give following result:
 
 <img width="1180" alt="Screenshot 2022-12-28 at 00 57 32" src="https://user-images.githubusercontent.com/19555470/209734790-4b17d2ef-70ad-4b2d-86eb-b8c4032d1a05.png">
 
+
+
+
+
+### Question
+Create a secured restful API to create and list articles. To create an article the user should provide a title, author, content and the date published. All of the properties are mandatory. The title should not exceed 100 characters and the publishing date should be provided in ISO 8601 format. The endpoint for the article list should return paginated results.
+
+Additionally, you are required to develop an endpoint for statistics that would be accessible only by admins. The endpoint should return the count of published articles on daily bases for the last 7 days.
