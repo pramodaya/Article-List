@@ -6,6 +6,10 @@ This contains 3 api's
 
 Use the following credentials to log in ( 2 roles | Change the user role 'ADMIN' to access '/statistic' end point) 
 
+> The overriding design goal for Markdown's
+> formatting syntax is to make it as readable
+> as possible. The idea is that a
+
  >spring.security.user.name = pramodaya
  >spring.security.user.password = password
  >spring.security.user.roles = USER
