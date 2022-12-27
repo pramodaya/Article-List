@@ -6,9 +6,9 @@ This contains 3 api's
 
 Use the following credentials to log in ( 2 roles | Change the user role 'ADMIN' to access '/statistic' end point) 
 
-- spring.security.user.name = pramodaya
-- spring.security.user.password = password
-- spring.security.user.roles = USER
+ spring.security.user.name = pramodaya
+ spring.security.user.password = password
+ spring.security.user.roles = USER
 
 - Get articles list
 - Add article
