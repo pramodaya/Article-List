@@ -1,4 +1,4 @@
-package com.listarticle.article.Article;
+package com.listarticle.article.Article.model;
 
 import java.time.LocalDate;
 

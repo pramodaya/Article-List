@@ -1,5 +1,7 @@
-package com.listarticle.article.Article;
+package com.listarticle.article.Article.domain;
 
+import com.listarticle.article.Article.model.Article;
+import com.listarticle.article.Article.model.ArticleCount;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

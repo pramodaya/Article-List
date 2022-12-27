@@ -1,5 +1,7 @@
-package com.listarticle.article.Article;
+package com.listarticle.article.Article.controller;
 
+import com.listarticle.article.Article.service.ArticleService;
+import com.listarticle.article.Article.model.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,9 @@
-package com.listarticle.article.Article;
+package com.listarticle.article.Article.service;
 
 
+import com.listarticle.article.Article.domain.ArticleRepository;
+import com.listarticle.article.Article.model.Article;
+import com.listarticle.article.Article.model.ArticleCount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

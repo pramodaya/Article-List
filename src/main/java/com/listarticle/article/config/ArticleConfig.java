@@ -1,7 +1,7 @@
 package com.listarticle.article.config;
 
-import com.listarticle.article.Article.Article;
-import com.listarticle.article.Article.ArticleRepository;
+import com.listarticle.article.Article.model.Article;
+import com.listarticle.article.Article.domain.ArticleRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
