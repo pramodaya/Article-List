@@ -23,7 +23,7 @@ This will return follwowing result with success code 200.
 
 
 
-### - Add articlee
+### - Add article
 Method - POST
 http://localhost:8080/api/v1/article/add
 This will return follwowing status code 200 if succeeded.
