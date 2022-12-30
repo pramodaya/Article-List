@@ -31,12 +31,9 @@ public class Article {
     @Column(length = 100)
     private String title;
     private String author;
-
     private String content;
     private LocalDate datePublished;
-
-    public Article() {
-    }
+    public Article() {}
 
     public Article(Long id, String title, String author, String content, LocalDate datePublished) {
         this.id = id;
@@ -45,7 +42,6 @@ public class Article {
         this.content = content;
         this.datePublished = datePublished;
     }
-
     public Long getId() {
         return id;
     }
@@ -77,7 +73,6 @@ public class Article {
     public void setContent(String content) {
         this.content = content;
     }
-
 
     public LocalDate getDatePublished() {
         return datePublished;

@@ -14,15 +14,12 @@ public class SecurityConfig {
 
     @Bean
     public InMemoryUserDetailsManager users(){
-
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-
         manager.createUser(User.withUsername("pramodaya")
                 .password("{noop}password")
                 .authorities("read", "write")
                 .roles("USER")
                 .build());
-
         manager.createUser(User.withUsername("john")
                 .password("{noop}password")
                 .authorities("read", "write", "delete")
@@ -31,7 +28,6 @@ public class SecurityConfig {
 
        return manager;
     }
-
 
     @Bean
     public SecurityFilterChain configure(HttpSecurity httpSecurity) throws Exception {

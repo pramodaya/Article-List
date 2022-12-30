@@ -13,7 +13,6 @@ public class ArticleCountConverter implements AttributeConverter<ArticleCount, O
     public Object[] convertToDatabaseColumn(ArticleCount attribute) {
         throw new UnsupportedOperationException("Conversion to database column not supported");
     }
-
     @Override
     public ArticleCount convertToEntityAttribute(Object[] dbData) {
         LocalDate publishingDate = (LocalDate) dbData[0];

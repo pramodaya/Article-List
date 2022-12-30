@@ -11,15 +11,11 @@ public class ErrorResponse implements Response{
         this.statusCode = statusCode;
         this.message = message;
     }
+    @Override
+    public StatusCodes getStatusCode() {return this.statusCode; }
 
     @Override
-    public StatusCodes getStatusCode() {
-        return this.statusCode;
-    }
-    @Override
-    public void setStatusCode(StatusCodes statusCode) {
-        this.statusCode = statusCode;
-    }
+    public void setStatusCode(StatusCodes statusCode) { this.statusCode = statusCode;}
 
     @Override
     public String getMessage() {

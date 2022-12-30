@@ -21,14 +21,13 @@ public class ArticleController {
     /**
      * Method GET
      * This will return all articles
-     * @return List<Article>
+     * @return Response
      */
     @GetMapping
     public Response getArticle()
     {
         return articleService.getArticle();
     }
-
     /**
      * Method POST
      * This will add article
@@ -38,12 +37,11 @@ public class ArticleController {
     public Response addArticle(@Validated @RequestBody Article article) {
         return articleService.addNewArticle(article);
     }
-
     /**
      * Method GET
      * This will return statistics
      * Only 'ADMIN' user's can access
-     * @return Map<LocalDate, Long>
+     * @return Response
      */
     @GetMapping("/statistic")
     @PreAuthorize("hasRole('ADMIN')")

@@ -29,14 +29,17 @@ public class SuccessResponse<Data> implements Response{
     public StatusCodes getStatusCode() {
         return statusCode;
     }
+
     @Override
     public void setStatusCode(StatusCodes statusCode) {
         this.statusCode = statusCode;
     }
+
     @Override
     public String getMessage() {
         return message;
     }
+
     @Override
     public void setMessage(String message) {
         this.message = message;

@@ -8,10 +8,7 @@ public enum StatusCodeMessage {
     INTERNAL_SERVER_ERROR("INTERNAL_SERVER_ERROR"), SERVICE_UNAVAILABLE("SERVICE_UNAVAILABLE");
 
     private final String statusCodeMessage;
-
-    StatusCodeMessage(String statusCodeMessage) {
-        this.statusCodeMessage = statusCodeMessage;
-    }
+    StatusCodeMessage(String statusCodeMessage) {this.statusCodeMessage = statusCodeMessage; }
 
     public String getStatusCodeMessage() {
         return statusCodeMessage;
