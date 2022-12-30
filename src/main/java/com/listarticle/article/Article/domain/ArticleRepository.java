@@ -12,9 +12,10 @@ import java.util.List;
 
 @Repository
 public interface ArticleRepository extends JpaRepository<Article, Long> {
-    @Query(value = "SELECT date_published AS publishingDate, COUNT(*) AS count FROM article "
-            + "WHERE date_published BETWEEN :startDate AND :endDate "
-            + "GROUP BY date_published", nativeQuery = true)
+    @Query("SELECT new com.listarticle.article.Article.model.ArticleCount(a.datePublished, COUNT(a)) "
+            + "FROM Article a "
+            + "WHERE a.datePublished BETWEEN :startDate AND :endDate "
+            + "GROUP BY a.datePublished")
     List<ArticleCount> countByPublishingDateBetween(
             @Param("startDate") LocalDate startDate, @Param("endDate") LocalDate endDate);
 }

@@ -33,6 +33,9 @@ public class ArticleService {
     public Map<LocalDate, Long> getArticleCount(){
         LocalDate today = LocalDate.now();
         LocalDate oneWeekAgo = today.minusWeeks(1);
+
+        List<ArticleCount>  x = articleRepository.countByPublishingDateBetween(oneWeekAgo, today);
+        System.out.println(x.stream().count());
         return articleRepository.countByPublishingDateBetween(oneWeekAgo, today)
                 .stream()
                 .collect(Collectors.toMap(ArticleCount::getPublishingDate, ArticleCount::getCount));
