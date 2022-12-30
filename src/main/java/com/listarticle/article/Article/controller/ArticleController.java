@@ -1,14 +1,12 @@
 package com.listarticle.article.Article.controller;
 
+import com.listarticle.article.RestClientConfig.Response.Response;
 import com.listarticle.article.Article.service.ArticleService;
 import com.listarticle.article.Article.model.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/article")
@@ -26,7 +24,8 @@ public class ArticleController {
      * @return List<Article>
      */
     @GetMapping
-    public List<Article> getArticle(){
+    public Response getArticle()
+    {
         return articleService.getArticle();
     }
 
@@ -36,8 +35,8 @@ public class ArticleController {
      * @param article
      */
     @PostMapping("/add")
-    public void addArticle(@RequestBody Article article){
-        articleService.addNewArticle(article);
+    public Response addArticle(@Validated @RequestBody Article article) {
+        return articleService.addNewArticle(article);
     }
 
     /**
@@ -48,7 +47,8 @@ public class ArticleController {
      */
     @GetMapping("/statistic")
     @PreAuthorize("hasRole('ADMIN')")
-    public Map<LocalDate, Long> getStatistics(){
+    public Response getStatistics(){
         return articleService.getArticleCount();
     }
 }
+

@@ -1,4 +1,4 @@
-package com.listarticle.article.config.security;
+package com.listarticle.article.Config.Security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

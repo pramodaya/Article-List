@@ -9,6 +9,8 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 
+
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 @Entity
@@ -25,6 +27,7 @@ public class Article {
             generator = "article_sequence"
     )
     private Long id;
+    @Size(max = 100, message = "Title must be less than 100 characters")
     @Column(length = 100)
     private String title;
     private String author;

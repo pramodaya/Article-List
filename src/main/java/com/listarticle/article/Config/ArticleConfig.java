@@ -1,4 +1,4 @@
-package com.listarticle.article.config;
+package com.listarticle.article.Config;
 
 import com.listarticle.article.Article.model.Article;
 import com.listarticle.article.Article.domain.ArticleRepository;
