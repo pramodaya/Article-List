@@ -11,13 +11,15 @@
 
 This application contains 3 api's
 
-Use the following credentials to log in ( 2 roles | Change the user role 'ADMIN' to access '/statistic' end point) [application.properties]
+Use the following credentials to log in ( 2 roles | Only the user role 'ADMIN' can access '/statistic' end point)
 
+User
+- username: "pramodaya"
+- password: "password"
 
- - spring.security.user.name = pramodaya
- - spring.security.user.password = password
- - spring.security.user.roles = USER
-
+Admin
+- username: "john"
+- password: "password"
 
 
 ### - Get article list
@@ -32,7 +34,7 @@ This will return follwowing result with success code 200.
 ### - Add article
 Method - POST
 http://localhost:8080/api/v1/article/add
-This will return follwowing status code 200 if succeeded.
+This will return following status code 200 if succeeded.
 
 <img width="1375" alt="Screenshot 2022-12-28 at 00 57 18" src="https://user-images.githubusercontent.com/19555470/209734772-5856c83b-6ad9-4092-b92a-9011272f6962.png">
 
@@ -40,12 +42,12 @@ This will return follwowing status code 200 if succeeded.
 ### - Get statistics
 Method - GET
 http://localhost:8080/api/v1/article/statistic
-This will return follwowing result if the user is not an admin:
+This will return following result if the user is not an admin:
 
 <img width="1356" alt="Screenshot 2022-12-28 at 01 01 32" src="https://user-images.githubusercontent.com/19555470/209734841-3731a060-7f7b-45a9-a654-5ce9d95d9cfd.png">
 
 
-If the validation is succedded with spring security it'll give following result:
+If the validation is succeeded with spring security it'll give following result:
 
 <img width="1252" alt="Screenshot 2022-12-28 at 01 29 45" src="https://user-images.githubusercontent.com/19555470/209736235-b23f97b2-c7ad-4522-8ac0-30343cdf028a.png">
 
