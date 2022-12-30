@@ -27,8 +27,7 @@ Method - GET
 http://localhost:8080/api/v1/article
 This will return follwowing result with success code 200.
 
-<img width="1391" alt="Screenshot 2022-12-28 at 00 50 11" src="https://user-images.githubusercontent.com/19555470/209734740-5d9faffc-d2fd-41c2-9fee-2724bc26f8ca.png">
-
+<img width="1416" alt="Screenshot 2022-12-31 at 01 17 01" src="https://user-images.githubusercontent.com/19555470/210117508-a6fd2856-41c4-4878-a7a1-d5c11e592ff5.png">
 
 
 ### - Add article
@@ -36,7 +35,7 @@ Method - POST
 http://localhost:8080/api/v1/article/add
 This will return following status code 200 if succeeded.
 
-<img width="1375" alt="Screenshot 2022-12-28 at 00 57 18" src="https://user-images.githubusercontent.com/19555470/209734772-5856c83b-6ad9-4092-b92a-9011272f6962.png">
+<img width="1434" alt="Screenshot 2022-12-31 at 01 16 46" src="https://user-images.githubusercontent.com/19555470/210117486-6c09cee9-51b8-4b7a-8e19-b05426ce7f2f.png">
 
 
 ### - Get statistics
@@ -51,7 +50,7 @@ If the validation is succeeded with spring security it'll give following result:
 
 <img width="1252" alt="Screenshot 2022-12-28 at 01 29 45" src="https://user-images.githubusercontent.com/19555470/209736235-b23f97b2-c7ad-4522-8ac0-30343cdf028a.png">
 
-<img width="1373" alt="Screenshot 2022-12-30 at 20 49 33" src="https://user-images.githubusercontent.com/19555470/210103283-3aa80bf3-ce6c-40e4-a57f-932bc4dd8bc5.png">
+<img width="1429" alt="Screenshot 2022-12-31 at 01 17 11" src="https://user-images.githubusercontent.com/19555470/210117525-69831aff-b58c-4239-ab69-dbe0716b31fd.png">
 
 
 
