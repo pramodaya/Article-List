@@ -47,8 +47,7 @@ This will return follwowing result if the user is not an admin:
 
 If the validation is succedded with spring security it'll give following result:
 
-<img width="1180" alt="Screenshot 2022-12-28 at 00 57 32" src="https://user-images.githubusercontent.com/19555470/209734790-4b17d2ef-70ad-4b2d-86eb-b8c4032d1a05.png">
-
+<img width="1252" alt="Screenshot 2022-12-28 at 01 29 45" src="https://user-images.githubusercontent.com/19555470/209736235-b23f97b2-c7ad-4522-8ac0-30343cdf028a.png">
 
 
 
