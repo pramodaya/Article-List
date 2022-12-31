@@ -12,6 +12,7 @@
 This application contains 3 api's
 
 Use the following credentials to log in ( 2 roles | Only the user role 'ADMIN' can access '/statistic' end point)
+Check application.properties file
 
 User
 - username: "pramodaya"
