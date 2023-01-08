@@ -23,12 +23,12 @@ Admin
 - password: "password"
 
 
-### - Get article list
+### - Get article list - Paginated
 Method - GET
 http://localhost:8080/api/v1/article
 This will return follwowing result with success code 200.
 
-<img width="1416" alt="Screenshot 2022-12-31 at 01 17 01" src="https://user-images.githubusercontent.com/19555470/210117508-a6fd2856-41c4-4878-a7a1-d5c11e592ff5.png">
+<img width="1336" alt="Screenshot 2023-01-08 at 20 08 58" src="https://user-images.githubusercontent.com/19555470/211211957-807fa207-b372-48bf-bf66-e69314a04390.png">
 
 
 ### - Add article
