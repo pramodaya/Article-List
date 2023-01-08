@@ -1,5 +1,6 @@
 package com.listarticle.article.Article.controller;
 
+import com.listarticle.article.Article.model.Page;
 import com.listarticle.article.RestClientConfig.Response.Response;
 import com.listarticle.article.Article.service.ArticleService;
 import com.listarticle.article.Article.model.Article;
@@ -24,9 +25,9 @@ public class ArticleController {
      * @return Response
      */
     @GetMapping
-    public Response getArticle()
+    public Response getArticle(@RequestBody Page page)
     {
-        return articleService.getArticle();
+        return articleService.getArticle(page);
     }
     /**
      * Method POST

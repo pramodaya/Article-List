@@ -58,7 +58,7 @@ public class SecurityConfig {
         httpSecurity
                 .csrf().disable()
                 .authorizeRequests()
-                .requestMatchers(articleRoute).hasRole(userRole)
+                .requestMatchers(articleRoute).permitAll()
                 .requestMatchers(statisticRoute).hasRole(adminRole)
                 .anyRequest()
                 .authenticated();
