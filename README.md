@@ -11,6 +11,9 @@ Additionally, you are required to develop an endpoint for statistics that would 
 
 ### ANSWER
 
+1 APIs are restricted with the spring security.
+2 Authorized user's can create Articles.
+
 ### - Postgress database table 'article'
 
 <img width="553" alt="Screenshot 2022-12-28 at 01 11 35" src="https://user-images.githubusercontent.com/19555470/209735466-30e18eb4-392d-41af-8063-7fdb29bc92c9.png">
