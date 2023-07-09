@@ -3,6 +3,11 @@
 
 ## SPRING | REST-API | SPRING-SECURITY | POSTGRESQL
 
+### Question
+Create a secured restful API to create and list articles. To create an article the user should provide a title, author, content and the date published. All the properties are mandatory. The title should not exceed 100 characters and the publishing date should be provided in ISO 8601 format. The endpoint for the article list should return paginated results.
+
+Additionally, you are required to develop an endpoint for statistics that would be accessible only by admins. The endpoint should return the count of published articles on daily bases for the last 7 days.
+
 
 ### - Postgress database table 'article'
 
@@ -53,9 +58,3 @@ If the validation is succeeded with spring security it'll give following result:
 
 <img width="1429" alt="Screenshot 2022-12-31 at 01 17 11" src="https://user-images.githubusercontent.com/19555470/210117525-69831aff-b58c-4239-ab69-dbe0716b31fd.png">
 
-
-
-### Question
-Create a secured restful API to create and list articles. To create an article the user should provide a title, author, content and the date published. All the properties are mandatory. The title should not exceed 100 characters and the publishing date should be provided in ISO 8601 format. The endpoint for the article list should return paginated results.
-
-Additionally, you are required to develop an endpoint for statistics that would be accessible only by admins. The endpoint should return the count of published articles on daily bases for the last 7 days.
